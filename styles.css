@@ -1,0 +1,99 @@
+/* General Reset */
+body, ul, li, h1, p {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+/* Header and Navbar Styles */
+#header {
+    background-color: #333;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+#header-img {
+    height: 50px;
+}
+
+#nav-bar ul {
+    display: flex;
+    gap: 1rem;
+}
+
+#nav-bar .nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+#nav-bar .nav-link:hover {
+    background-color: #555;
+}
+
+/* Sections */
+section {
+    padding: 100px 20px;
+    margin-top: 60px;
+}
+
+#features, #video-section, #pricing {
+    background-color: #f4f4f4;
+}
+
+#form-section {
+    background-color: #e0e0e0;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* Form Styles */
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#email {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#submit {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    #nav-bar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #form {
+        width: 100%;
+    }
+
+    #email {
+        width: 80%;
+    }
+}
